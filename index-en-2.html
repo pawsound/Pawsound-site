@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PawSound - Smart Cap for Dogs</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fefdfb;
+      color: #333;
+    }
+
+    header {
+      background: #fff5e1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin-bottom: 1.5rem;
+    }
+
+    .cta-button {
+      background: #ffba00;
+      color: #000;
+      padding: 0.8rem 1.6rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .cta-button:hover {
+      background: #e0a200;
+    }
+
+    .product-image {
+      width: 100%;
+      max-width: 500px;
+      margin: 2rem auto;
+      display: block;
+      border-radius: 12px;
+    }
+
+    section {
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin-bottom: 0.6rem;
+      padding-left: 1rem;
+      position: relative;
+    }
+
+    ul li::before {
+      content: "🐾";
+      position: absolute;
+      left: 0;
+    }
+
+    .contact {
+      background: #f6f6f6;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>PawSound</h1>
+    <p>The smart cap that adapts to your dog's emotions to reduce stress and enhance their well-being.</p>
+    <button class="cta-button" onclick="scrollToSection()">Discover</button>
+  </header>
+
+  <img src="https://images.unsplash.com/photo-1709902026997-c58976c7a1fa" alt="Smart dog cap" class="product-image"/>
+
+  <section id="features">
+    <h2>Key Features</h2>
+    <ul>
+      <li>Built-in emotional sensors</li>
+      <li>Custom relaxing sound diffusion</li>
+      <li>Real-time stress reduction</li>
+      <li>Integrated GPS module</li>
+      <li>Comfortable and adjustable design</li>
+      <li>Mobile app for behavioral tracking</li>
+    </ul>
+  </section>
+
+  <section class="contact">
+    <h2>Stay Updated</h2>
+    <p>Subscribe to get notified about the official launch.</p>
+    <input type="email" placeholder="Your email address" style="padding: 0.5rem; border-radius: 6px; border: 1px solid #ccc; width: 250px;" />
+    <button class="cta-button" style="margin-left: 1rem;">Subscribe</button>
+  </section>
+
+  <footer>
+    © 2025 PawSound. All rights reserved.
+  </footer>
+
+  <script>
+    function scrollToSection() {
+      document.getElementById('features').scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PawSound - Bonnet connecté pour chien</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fefdfb;
+      color: #333;
+    }
+
+    header {
+      background: #fff5e1;
+      text-align: center;
+      padding: 2rem 1rem;
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto 1.5rem;
+    }
+
+    .cta-button {
+      background: #ffba00;
+      color: #000;
+      padding: 0.8rem 1.6rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .cta-button:hover {
+      background: #e0a200;
+    }
+
+    .product-image {
+      width: 100%;
+      max-width: 500px;
+      margin: 2rem auto;
+      display: block;
+      border-radius: 12px;
+    }
+
+    section {
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin-bottom: 0.6rem;
+      padding-left: 1rem;
+      position: relative;
+    }
+
+    ul li::before {
+      content: "🐾";
+      position: absolute;
+      left: 0;
+    }
+
+    .contact {
+      background: #f6f6f6;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    .lang-switch {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+
+    .lang-switch a {
+      margin: 0 0.5rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .lang-switch a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="lang-switch">
+      <a href="index.html">FR</a> | <a href="index-en.html">EN</a>
+    </div>
+    <h1>PawSound</h1>
+    <p>Le bonnet intelligent qui s’adapte aux émotions de votre chien pour réduire son stress et améliorer son bien-être.</p>
+    <button class="cta-button" onclick="document.getElementById('features').scrollIntoView({ behavior: 'smooth' })">Découvrir</button>
+  </header>
+
+  <img src="https://images.unsplash.com/photo-1709902026997-c58976c7a1fa" alt="Bonnet connecté pour chien" class="product-image"/>
+
+  <section id="features">
+    <h2>Fonctionnalités clés</h2>
+    <ul>
+      <li>Capteurs émotionnels intégrés</li>
+      <li>Diffusion de sons apaisants personnalisés</li>
+      <li>Réduction du stress en temps réel</li>
+      <li>Module GPS intégré</li>
+      <li>Design confortable et ajustable</li>
+      <li>Application mobile de suivi comportemental</li>
+    </ul>
+  </section>
+
+  <section class="contact">
+    <h2>Restez informé·e</h2>
+    <p>Inscrivez-vous pour être tenu·e au courant du lancement officiel.</p>
+    <input type="email" placeholder="Votre adresse email" style="padding: 0.5rem; border-radius: 6px; border: 1px solid #ccc; width: 250px;" />
+    <button class="cta-button" style="margin-left: 1rem;">S'inscrire</button>
+  </section>
+
+  <footer>
+    © 2025 PawSound. Tous droits réservés.
+  </footer>
+
+</body>
+</html>
